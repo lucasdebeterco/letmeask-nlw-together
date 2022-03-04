@@ -1,6 +1,5 @@
-import firebase from "firebase/compat";
 import { createContext, ReactNode, useEffect, useState } from "react";
-import { auth } from "../services/firebase";
+import { auth, firebase } from "../services/firebase";
 
 type User = {
 	id: String;
