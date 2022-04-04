@@ -1,14 +1,15 @@
 .button {
-    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     height: 50px;
+    padding: 0 32px;
+
     border-radius: 8px;
     font-weight: 500;
     background: #835afd;
     color: #fff;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     cursor: pointer;
     border: 0;
