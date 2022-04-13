@@ -40,6 +40,8 @@ export function Room() {
             isAnswered: false,
         }
         await firebase.database().ref(`rooms/${roomId}/questions`).push(question);
+
+        setNewQuestion('');
     }
 
     return (
@@ -65,6 +67,14 @@ export function Room() {
                     />
 
                     <div className="form-footer">
+                        { user ? (
+                            <div className="user-info">
+                                <img src={user.avatar as string} alt={user.name as string} />
+                                <span>{user.name}</span>
+                            </div>
+                        ) : (
+                            <span></span>
+                        )}
                         <span>Para enviar sua pergunta, <button>faça seu login</button></span>
                         <Button type='submit' disabled={!user}>Enviar pergunta</Button>
                     </div>
