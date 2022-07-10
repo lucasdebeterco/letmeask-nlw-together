@@ -7,6 +7,7 @@ import '../styles/room.scss';
 import { FormEvent, useEffect, useState } from 'react';
 import { useAuth } from '../hooks/useAuth';
 import { database, firebase } from '../services/firebase';
+import { Question } from '../components/Question';
 
 type FirebaseQuestions = Record<string, {
     author : {
@@ -125,7 +126,16 @@ export function Room() {
                     </div>
                 </form>
 
-                {JSON.stringify(questions)}
+                <div className="question-list">
+                    {questions.map(question => {
+                        return (
+                            <Question
+                                content={question.content}
+                                author={question.author}
+                            />
+                        );
+                    })}
+                </div>
             </main>
         </div>
     );
