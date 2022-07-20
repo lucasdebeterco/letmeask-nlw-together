@@ -4,7 +4,7 @@ import { FormEvent, useState } from 'react'
 import illustrationImg from '../assets/illustration.svg'
 import logoImg from '../assets/logo.svg'
 
-import { Button } from '../components/Button'
+import { Button } from '../components/Button/Button'
 import { useAuth } from '../hooks/useAuth';
 
 import '../styles/auth.scss';

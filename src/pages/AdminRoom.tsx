@@ -7,9 +7,9 @@ import checkImg from '../assets/check.svg';
 import answerImg from '../assets/answer.svg';
 import '../styles/room.scss';
 
-import { Question } from '../components/Question';
-import { RoomCode } from '../components/RoomCode';
-import { Button } from '../components/Button';
+import { Question } from '../components/Question/Question';
+import { RoomCode } from '../components/RoomCode/RoomCode';
+import { Button } from '../components/Button/Button';
 import { FormEvent, useEffect, useState } from 'react';
 
 import { useAuth } from '../hooks/useAuth';

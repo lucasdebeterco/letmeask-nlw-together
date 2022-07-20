@@ -5,7 +5,7 @@ import illustrationImg from '../assets/illustration.svg'
 import logoImg from '../assets/logo.svg'
 import googleIconImage from '../assets/google-icon.svg'
 
-import { Button } from '../components/Button'
+import { Button } from '../components/Button/Button'
 
 import '../styles/auth.scss'; 
 import { useAuth } from '../hooks/useAuth'
